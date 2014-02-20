@@ -11,15 +11,50 @@
 
         <!-- Custom CSS -->
         <link rel="stylesheet" href="/css/main.css">
-
+        <link href="/css/bootstrap.css" rel="stylesheet">
+       <link href="/css/navbar.css" rel="stylesheet">
     </head>
     <body>
+
+      
+        
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+ <div class="container-fluid">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-about-navbar-collapse-1">
+       <span class="sr-only">Toggle navigation</span>
+       <span class="icon-bar"></span>
+       <span class="icon-bar"></span>
+       <span class="icon-bar"></span>
+  </button>
+  <a class="navbar-brand" href="http://localhost:4000/">myJekyll</a>
+  </div>
+ <div class="collapse navbar-collapse" id="bs-about-navbar-collapse-1">
+    <ul class="nav navbar-nav">
+        <li class="active"><a href="http://localhost:4000/about.html">About</a></li>
+        <li><a href="#">Contacts</a></li>
+         <li><a href="http://localhost:4000/">Home</a></li>
+       <!-- <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"</b></a> 
+            <ul class="dropdown-menu">
+                <li><a href="http://localhost:4000/about.html"><About></a></li>
+                <li class="divider"></li>
+                 <li><a href="http://localhost:4000/kenya/html/whatever/2014/02/18/my-first-post.html">My first post</a></li>
+                 <li><a href="http://localhost:4000/jekyll/update/2014/02/18/welcome-to-jekyll.html">Welcome to jekyll</a></li>
+            </ul>
+          </li>-->
+      </ul>
+   </div>
+  </div>
+</nav>
 
         <div class="site">
           <div class="header">
             <h1 class="title"><a href="/">{{ site.name }}</a></h1>
             <a class="extra" href="/">home</a>
           </div>
+
+
 
           {{ content }}
 
@@ -39,6 +74,8 @@
             </div>
           </div>
         </div>
-
+       <script src="/js/jquery.js"></script>
+      <script src="/js/main.js"></script>
+     
     </body>
 </html>
